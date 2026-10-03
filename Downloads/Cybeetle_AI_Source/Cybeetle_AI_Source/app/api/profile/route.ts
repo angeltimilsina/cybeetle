@@ -1,0 +1,2 @@
+import {ensureUser,database,failure,sameOrigin,AccessError} from '@/db/access';
+export async function PATCH(req:Request){try{sameOrigin(req);const u=await ensureUser();const b=await req.json() as {tasks:unknown};if(!Array.isArray(b.tasks)||b.tasks.length!==3||b.tasks.some(v=>typeof v!=='boolean'))throw new AccessError('Invalid quest progress',400);await database().prepare('UPDATE users SET tasks=? WHERE id=?').bind(JSON.stringify(b.tasks),u.userId).run();return Response.json({saved:true})}catch(e){return failure(e)}}

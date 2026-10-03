@@ -1,0 +1,2 @@
+import {ensureUser,isAdmin,failure,database,noCache} from '@/db/access';
+export async function GET(){try{const u=await ensureUser();const row=await database().prepare('SELECT tasks FROM users WHERE id=?').bind(u.userId).first<{tasks:string}>();return Response.json({user:{name:u.displayName,email:u.email,isAdmin:isAdmin(u.email)},tasks:JSON.parse(row?.tasks||'[false,false,false]')},{headers:noCache})}catch(e){return failure(e)}}

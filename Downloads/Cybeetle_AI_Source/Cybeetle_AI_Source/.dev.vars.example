@@ -1,0 +1,10 @@
+# Copy to .dev.vars. Keep all values server-side.
+# Add a valid OpenAI API key to enable AI and agent features; leave blank for browser-only use.
+OPENAI_API_KEY=
+WEB_MODEL=gpt-4.1-mini
+AGENT_MODEL=gpt-4.1-mini
+AI_MODELS=gpt-4.1-mini,gpt-4.1
+BROWSER_BACKEND_URL=http://localhost:8080
+BROWSER_WS_URL=ws://localhost:8080
+# Use the same random 32+ character secret in browser-worker/.env.
+SESSION_SECRET=REPLACE_WITH_A_RANDOM_64_CHARACTER_SECRET
