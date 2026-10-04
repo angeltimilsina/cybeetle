@@ -1,6 +1,6 @@
 import {
   Activity,
-  Android,
+  Smartphone,
   ArrowRight,
   Boxes,
   Building2,
@@ -24,7 +24,7 @@ const environments = [
     name: "Android Workspace",
     status: "Available now",
     detail: "Existing Cybeetle Android environment for apps, testing, automation, and remote access.",
-    icon: Android,
+    icon: Smartphone,
     live: true,
   },
   {
