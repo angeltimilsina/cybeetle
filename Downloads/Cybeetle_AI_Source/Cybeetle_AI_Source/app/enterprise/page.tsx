@@ -64,7 +64,7 @@ export default function EnterprisePage() {
           <a href="#environments">Environments</a>
           <a href="#security">Security</a>
         </div>
-        <a href="/" className="nav-cta">Open Cybeetle</a>
+        <a href="/web" className="nav-cta">Open Cybeetle</a>
       </nav>
 
       <section className="hero">
@@ -219,7 +219,7 @@ export default function EnterprisePage() {
           <span className="kicker">CYBEETLE ENTERPRISE</span>
           <h2>Secure access. Real compute. One organizational control plane.</h2>
         </div>
-        <a href="/" className="button primary">Open current Cybeetle <ArrowRight size={17}/></a>
+        <a href="/web" className="button primary">Open Cybeetle Web <ArrowRight size={17}/></a>
       </section>
 
       <footer>
