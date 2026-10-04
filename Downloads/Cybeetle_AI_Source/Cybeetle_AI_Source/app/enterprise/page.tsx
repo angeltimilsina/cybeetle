@@ -1,6 +1,5 @@
 import {
   Activity,
-  Smartphone,
   ArrowRight,
   Boxes,
   Building2,
